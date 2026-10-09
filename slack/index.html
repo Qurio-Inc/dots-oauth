@@ -1,0 +1,13 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>dots</title>
+<body style="margin:0;height:100vh;display:grid;place-items:center;font-family:-apple-system,system-ui,sans-serif;color:#556;background:#f4f5f8">
+<p>dots にもどっています…</p>
+<script>
+  // Slack sends the user back here with ?code=…&state=…; hand it to the app. Nothing is stored or sent elsewhere.
+  location.replace('dots://slack-callback' + location.search);
+</script>
+</body>
+</html>
